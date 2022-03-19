@@ -5,3 +5,5 @@
 - Queremos desplegar una página de demo.
 - Realizar el despliegue manual.
 
+# Demo
+[Demo web](https://devgumidafe.github.io/lab-cloud/)
