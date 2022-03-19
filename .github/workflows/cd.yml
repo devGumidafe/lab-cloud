@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+env:
+  REACT_APP_API_KEY: ${{ secrets.CREATE_REACT_APP_API_KEY }}
 
 jobs:
   cd:
