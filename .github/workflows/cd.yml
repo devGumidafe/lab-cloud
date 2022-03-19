@@ -5,7 +5,7 @@ on:
     branches:
       - main
 env:
-  REACT_APP_API_KEY: ${{ secrets.CREATE_REACT_APP_API_KEY }}
+  REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
 
 jobs:
   cd:
@@ -25,6 +25,6 @@ jobs:
       - name: Install
         run: npm ci
       - name: Build
-        run: npm run build
+        run: npm run build -t ${{ secrets.REACT_APP_API_KEY }}
       - name: Deploy
         run: npm run deploy -- -r git@github.com:devGumidafe/lab-cloud.git
